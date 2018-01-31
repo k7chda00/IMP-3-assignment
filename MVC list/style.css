@@ -1,0 +1,81 @@
+
+
+body {
+    color: #eee;
+    background-color: #444;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+
+.wrap {
+    width: 300px;
+    display: flex; 
+    margin: 20px auto;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center; }
+
+    .wrap .myForm {
+        display: flex;
+        padding: 0 10px;
+        position: relative;
+        margin-bottom: 20px;
+        align-content: center;
+        justify-content: space-between; }
+
+        .wrap .myForm label {
+            align-self: center; }
+
+        .wrap .myForm input {
+            height: 30px; 
+            width: 100px;
+            padding: 0 20px;
+            border-radius: 10px;
+            border: 1px solid #e4e4e4; }
+
+        .wrap .myForm button {
+            height: 30px;
+            color: #444;
+            padding: 0 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            box-sizing: content-box;
+            border: 1px solid #e4e4e4;
+            background-color: #e4e4e4; }
+
+        .wrap .myForm button:active {
+            box-shadow: 0 0 5px 1px #e4e4e4; }
+
+        .wrap .myForm button:focus ,
+        .wrap .myForm input:focus {
+            outline: 0 none; }
+
+        .wrap .myForm input:focus {
+            outline: 0 none;
+            box-shadow: 0 0 5px 1px #e4e4e4; }
+
+    .wrap .list {  
+        padding-left: 40px; }
+
+        .wrap .list li {
+            opacity: 0;
+            margin: 10px 0;
+            color: #00E676;
+            font-size: 28px;
+            position: relative;
+            text-shadow: 0 0 5px #00E676;
+            animation: fadeIn .5s ease-in-out 1 forwards; }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                color: #eee;
+                text-shadow: none;
+            }
+        }
+
+        @media only screen and (min-width: 500px) {
+            .wrap {
+                width: 70%; }
+
+                .wrap .myForm input {
+                    width: 45%; }
+        }
